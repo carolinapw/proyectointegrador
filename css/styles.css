@@ -29,6 +29,7 @@ div {
 img {
     width: 15vw;
     height: 15vh;
+    border-radius: 13px;
 }
 .subtitulos {
     margin-bottom: 5%;
