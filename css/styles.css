@@ -10,9 +10,10 @@ header {
     width: 8vw;
     height: 7.5vh;
 }
-a {
+.opciones {
     text-decoration: none;
     color: white;
+    margin: 20px;
 }
 body {
     background-color: lightblue;
@@ -37,6 +38,19 @@ img {
 .fechas {
     margin-top: 0.5%;
 }
-
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 200px;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C0C0C0;
+    margin: 5px 9px;
+}
 
 
