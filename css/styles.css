@@ -7,7 +7,7 @@ header {
     flex-direction: row;
 }
 .logo {
-    width: 14vw;
+    width: 13vw;
     height: 9vh;
 }
 .opciones {
@@ -20,6 +20,9 @@ body {
     background-color: #000C54;
     font-family: Avenir,sans-serif;
 }
+.ofertas {
+    color: white;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +31,6 @@ body {
 }
 article {
     margin: 0% 0.2%;
-    
 }
 img {
     width: 16vw;
@@ -41,6 +43,9 @@ img {
 .fechas {
     margin-top: 0.5%;
 }
+.descripcion {
+    color: white;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +57,7 @@ img {
     margin: 5px 9px;
 }
 .integrantes {
-    color: #C0C0C0;
+    color: #C4C4C4;
     margin: 5px 9px;
 }
 
