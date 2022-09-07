@@ -5,14 +5,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: #0e0b14;
 }
 .logo {
     width: 8vw;
     height: 7.5vh;
 }
+
+.opciones {
+    font-family: Avenir,sans-serif;
+    padding: 16px 12px;
+}
 a {
     text-decoration: none;
     color: white;
+    margin:10px;
 }
 body {
     background-color: lightblue;
@@ -29,7 +36,7 @@ div {
 img {
     width: 15vw;
     height: 15vh;
-    border-radius: 13px;
+    border-radius: 4px;
 }
 .subtitulos {
     margin-bottom: 5%;
@@ -37,6 +44,7 @@ img {
 .fechas {
     margin-top: 0.5%;
 }
+
 
 
 
