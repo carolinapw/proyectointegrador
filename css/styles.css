@@ -7,29 +7,32 @@ header {
     flex-direction: row;
 }
 .logo {
-    width: 8vw;
-    height: 7.5vh;
+    width: 14vw;
+    height: 9vh;
 }
 .opciones {
     text-decoration: none;
     color: white;
     margin: 20px;
+   
 }
 body {
-    background-color: lightblue;
+    background-color: #000C54;
     font-family: Avenir,sans-serif;
 }
-article {
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
-div {
-    margin: 0% 0.5%;
+article {
+    margin: 0% 0.2%;
+    
 }
 img {
-    width: 15vw;
-    height: 15vh;
+    width: 16vw;
+    height: 16vh;
     border-radius: 13px;
 }
 .subtitulos {
