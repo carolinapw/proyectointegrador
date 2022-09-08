@@ -8,9 +8,10 @@ header {
     background-color: #0e0b14;
 }
 .logo {
-    width: 8vw;
-    height: 7.5vh;
+    width: 14vw;
+    height: 9vh;
 }
+<<<<<<< HEAD
 
 .opciones {
     font-family: Avenir,sans-serif;
@@ -20,27 +21,67 @@ a {
     text-decoration: none;
     color: white;
     margin:10px;
+=======
+.opciones {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+   
+>>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209
 }
 body {
-    background-color: lightblue;
+    background-color: #000C54;
     font-family: Avenir,sans-serif;
 }
-article {
+.ofertas {
+    color: white;
+}
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
-div {
-    margin: 0% 0.5%;
+article {
+    margin: 0% 0.2%;
 }
 img {
+<<<<<<< HEAD
     width: 15vw;
     height: 15vh;
     border-radius: 4px;
+=======
+    width: 16vw;
+    height: 16vh;
+    border-radius: 13px;
+>>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209
 }
 .subtitulos {
     margin-bottom: 5%;
 }
 .fechas {
     margin-top: 0.5%;
+<<<<<<< HEAD
 }
+=======
+}
+.descripcion {
+    color: white;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
+}
+
+
+>>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209

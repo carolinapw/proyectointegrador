@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+img {
+    width: 40vw;
+    border-radius: 13px;
+}
