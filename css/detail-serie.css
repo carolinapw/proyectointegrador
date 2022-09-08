@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #0e0b14;
+}
+.opciones {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.logo {
+    width: 14vw;
+    height: 9vh;
+}
+h2 {
+    color: white;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+img {
+    border-radius: 4px;
+    float: left;
+    margin: 20px;
+}
+.gossipgirl {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.gossipgirl.h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px;
+}
+.gossipgirl.p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    margin: 20px;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
+}
+
+
+
+@media(max-widht: 414px){
+    img {
+        float: none;
+        width: 250px;
+        height: 150px;
+    }
+}
