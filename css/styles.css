@@ -5,7 +5,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #0e0b14;
 }
 .logo {
     width: 14vw;
@@ -15,7 +14,6 @@ header {
     text-decoration: none;
     color: white;
     margin: 20px;
-   
 }
 body {
     background-color: #000C54;
