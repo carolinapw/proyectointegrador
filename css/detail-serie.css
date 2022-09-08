@@ -27,6 +27,11 @@ header {
 h2 {
     color: white;
 }
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 img {
     border-radius: 4px;
     float: left;
