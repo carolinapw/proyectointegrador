@@ -11,23 +11,11 @@ header {
     width: 14vw;
     height: 9vh;
 }
-<<<<<<< HEAD
-
-.opciones {
-    font-family: Avenir,sans-serif;
-    padding: 16px 12px;
-}
-a {
-    text-decoration: none;
-    color: white;
-    margin:10px;
-=======
 .opciones {
     text-decoration: none;
     color: white;
     margin: 20px;
    
->>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209
 }
 body {
     background-color: #000C54;
@@ -46,24 +34,15 @@ article {
     margin: 0% 0.2%;
 }
 img {
-<<<<<<< HEAD
-    width: 15vw;
-    height: 15vh;
-    border-radius: 4px;
-=======
     width: 16vw;
     height: 16vh;
     border-radius: 13px;
->>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209
 }
 .subtitulos {
     margin-bottom: 5%;
 }
 .fechas {
     margin-top: 0.5%;
-<<<<<<< HEAD
-}
-=======
 }
 .descripcion {
     color: white;
@@ -84,4 +63,3 @@ img {
 }
 
 
->>>>>>> 0eb1729006fe8dc09178f1ebd49a1e8da4b0a209
