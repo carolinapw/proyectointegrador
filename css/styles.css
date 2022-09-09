@@ -1,23 +1,33 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+}
 header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
+}
+.contlogo {
+    width: 15%;
 }
 .logo {
     width: 14vw;
     height: 9vh;
+}
+.navegacion {
+    width: 65%;
 }
 .opciones {
     text-decoration: none;
     color: white;
     margin: 20px;
 }
-body {
-    background-color: #000C54;
-    font-family: Avenir,sans-serif;
+.formulario {
+    width: 20%;
 }
 .ofertas {
     color: white;

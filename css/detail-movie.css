@@ -5,12 +5,65 @@ body {
     background-color: #000C54;
     font-family: Avenir,sans-serif;
 }
-section {
+header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+.contlogo {
+    width: 15%;
+}
+.logo {
+    width: 14vw;
+    height: 9vh;
+}
+.navegacion {
+    width: 65%;
+}
+.opciones {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.formulario {
+    width: 20%;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.imagen {
+    width: 50%;
+}
 img {
     width: 40vw;
-    border-radius: 13px;
+    border-radius: 12px;
 }
+.contcalificacion {
+    width: 50%;
+}
+.calificacion {
+    color: white;
+    text-align: center;
+}
+.info {
+    color: white;
+}
+p {
+    color: white;
+}
+.cajauno {
+    width: 50%;
+}
+.cajados {
+    width: 50%;
+}
+.fav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+

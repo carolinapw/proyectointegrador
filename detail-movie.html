@@ -5,44 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/detail-movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Detalle película</title>
 </head>
 <body>
     <header>
+        <div class="contlogo">
             <img class="logo" src="./img/logo.png">
-            <nav>
-                <a class="opciones" href="./index.html">Home</a> 
-                <a class="opciones" href="./detail-movie.html">Movies</a>
-                <a class="opciones" href="./detail-serie.html">Series</a>
-                <a class="opciones" href="./favourite.html">Favorites</a>
-                <a class="opciones" href="./genres.html">Genres</a>
-                <a class="opciones" href="./search-results.html">Results</a>
-            </nav>
+        </div>
+        <nav class="navegacion">
+            <a class="opciones" href="./index.html">Home</a> 
+            <a class="opciones" href="./detail-movie.html">Movies</a>
+            <a class="opciones" href="./detail-serie.html">Series</a>
+            <a class="opciones" href="./favoritos.html">Favorites</a>
+            <a class="opciones" href="./genres.html">Genres</a>
+            <a class="opciones" href="./search-results.html">Results</a>
+        </nav>
+        <nav class="formulario">
+            <form action="./search-results.html" method="get">
+                <input type="text" name="buscador" value="" placeholder="Buscador">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
     </header>
     <main>
         <section>
-            <article>
-                <img src="./img/soul.jpeg">
-            </article>
-            <article>
-                <h3>Calificación</h3>
-            </article>
+            <div class="imagen"><img src="./img/soul.jpeg"></div>
+            <div class="contcalificacion"><h3 class="calificacion">Calificación</h3></div>
         </section>
         <section>
-            <article>
-                <h3>Nombre</h3>
+            <article class="cajauno">
+                <h3 class="info">Nombre</h3>
                     <p>Soul</p>
-                <h3>Fecha de estreno</h3>
+                <h3 class="info">Fecha de estreno</h3>
                     <p>Octubre 2020</p>
-                <h3>Duración</h3>
+                <h3 class="info">Duración</h3>
                     <p>1h 40m</p>
-                <h3>Género</h3>
+                <h3 class="info">Género</h3>
                     <p>Aventura, drama y comedia</p>
             </article>
-            <article>
-                <h3>Sinopsis</h3>
+            <article class="cajados">
+                <h3 class="info">Sinopsis</h3>
                 <p>Un músico que ha perdido su pasión por la música es transportado fuera de su cuerpo y debe encontrar el camino de regreso con la ayuda de un alma infantil que aprende sobre sí misma.</p>
-                <h3>Agregar a favoritos</h3>
+                <div class="fav">
+                    <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
+                    <h3 class="info">Agregar a favoritos</h3>
+                </div>
             </article>
         </section>
     </main>
