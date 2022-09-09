@@ -29,6 +29,15 @@ header {
 .formulario {
     width: 20%;
 }
+.search {
+    border-radius: 9px;
+    background-color: #000C54;
+    margin-top: 8%;
+    border: 1px white solid;
+}
+.boton {
+    color: white;
+}
 .ofertas {
     color: white;
 }
@@ -68,6 +77,9 @@ img {
 .integrantes {
     color: #C4C4C4;
     margin: 5px 9px;
+}
+@media (max-width: 820px) {
+    
 }
 
 
