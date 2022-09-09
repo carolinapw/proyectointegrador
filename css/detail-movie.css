@@ -37,10 +37,12 @@ section {
 .imagen {
     width: 50%;
 }
-img {
+.soul {
     width: 40vw;
     border-radius: 12px;
+    margin-left: 60px;
 }
+
 .contcalificacion {
     width: 50%;
 }
@@ -65,5 +67,8 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+a {
+    padding-top: 20px;
+    margin-right: 5px;
+}
 
