@@ -4,19 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/genres.css">
     <title>Generos</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo.png">
-        <nav>
+        <div class="contlogo">
+            <img class="logo" src="./img/logo.png">
+        </div>
+        <nav class="navegacion">
             <a class="opciones" href="./index.html">Home</a> 
             <a class="opciones" href="./detail-movie.html">Movies</a>
             <a class="opciones" href="./detail-serie.html">Series</a>
-            <a class="opciones" href="./favourite.html">Favorites</a>
+            <a class="opciones" href="./favoritos.html">Favorites</a>
             <a class="opciones" href="./genres.html">Genres</a>
             <a class="opciones" href="./search-results.html">Results</a>
         </nav>
+        <nav class="formulario">
+            <form action="./search-results.html" method="get">
+                <input type="text" name="buscador" value="" placeholder="Buscador">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
     </header>
+    <main>
+        <section class="container">
+            <article class="card">
+                <h1> Comedia</h1>
+                <a href="./genres.html"><img src="./img/mipobreangelito.jpg"></a>
+                <h4 class="subtitulos descripcion">Mi Pobre Angelito</h4>
+                <a href="./genres.html"><img src="./img/27vestidos.jpg"></a>
+                <h4 class="subtitulos descripcion">27 vestidos</h4>
+                <a href="./genres.html"><img src="./img/monster inc.jpg"></a>
+                <h4 class="subtitulos descripcion">Monster Inc</h4>
+                <a href="./genres.html"><img src="./img/sister act.jpg"></a>
+                <h4 class="subtitulos descripcion">Sister Act</h4>
+            </article>
+            <article class="card">
+                <h1> Romance</h1>
+                <a href="./genres.html"><img src="./img/cenicienta.jpg"></a>
+                <h4 class="subtitulos descripcion">Cenicienta</h4>
+                <a href="./genres.html"><img src="./img/nuncahebesado.jpg"></a>
+                <h4 class="subtitulos descripcion">Nunca he besado</h4>
+                <a href="./genres.html"><img src="./img/yoantes de ti.png"></a>
+                <h4 class="subtitulos descripcion">Yo antes de ti</h4>
+            </article>
+            <article class="card">
+                <h1> Acción</h1>
+                <a href="./genres.html"><img src="./img/piratas.jpg"></a>
+                <h4 class="subtitulos descripcion">Piratas del Caribe</h4>
+                <a href="./genres.html"><img src="./img/narnia.jpg"></a>
+                <h4 class="subtitulos descripcion">Crónicas de Narnia</h4>
+                <a href="./genres.html"><img src="./img/tron.jpg"></a>
+                <h4 class="subtitulos descripcion">Tron: el legado</h4>
+            </article>
+            <article class="card">
+                <h1> Documentales</h1>
+                <a href="./genres.html"><img src="./img/pixarstory.jpg"></a>
+                <h4 class="subtitulos descripcion">La historia de Pixar</h4>
+                <a href="./genres.html"><img src="./img/taylordocu.jpg"></a>
+                <h4 class="subtitulos descripcion">Taylor Swift: folklore</h4>
+                <a href="./genres.html"><img src="./img/before the flood.jpg"></a>
+                <h4 class="subtitulos descripcion">Antes de la inundación</h4>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

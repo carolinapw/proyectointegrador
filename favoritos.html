@@ -10,14 +10,22 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo.png">
-        <nav>
+        <div class="contlogo">
+            <img class="logo" src="./img/logo.png">
+        </div>
+        <nav class="navegacion">
             <a class="opciones" href="./index.html">Home</a> 
             <a class="opciones" href="./detail-movie.html">Movies</a>
             <a class="opciones" href="./detail-serie.html">Series</a>
-            <a class="opciones" href="./favourite.html">Favorites</a>
+            <a class="opciones" href="./favoritos.html">Favorites</a>
             <a class="opciones" href="./genres.html">Genres</a>
             <a class="opciones" href="./search-results.html">Results</a>
+        </nav>
+        <nav class="formulario">
+            <form action="./search-results.html" method="get">
+                <input type="text" name="buscador" value="" placeholder="Buscador">
+                <button type="submit">Buscar</button>
+            </form>
         </nav>
     </header>
     <main>
