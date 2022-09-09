@@ -7,25 +7,13 @@ body {
     font-family: Avenir,sans-serif;
     color: white;
 }
-
-header {
+.cont1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #0e0b14;
-}
-.opciones {
-    text-decoration: none;
-    color: white;
-    margin: 20px;
-}
-
-.logo {
-    width: 14vw;
-    height: 9vh;
-}
-h2 {
-    color: white;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 div {
     display: flex;
@@ -36,12 +24,14 @@ img {
     border-radius: 4px;
     float: left;
     margin: 20px;
+    width: 100%;
 }
 .gossipgirl {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
+    align-items: flex-start;
+}
+tit.gossip {
+    width: 50%;
 }
 .gossipgirl.h4 {
     text-align: center;
