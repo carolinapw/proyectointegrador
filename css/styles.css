@@ -15,11 +15,11 @@ header {
     width: 15%;
 }
 .logo {
-    width: 14vw;
-    height: 9vh;
+    width: 100%;
 }
 .navegacion {
     width: 65%;
+    margin-top: 1.5%;
 }
 .opciones {
     text-decoration: none;
@@ -38,12 +38,12 @@ header {
     flex-direction: row;
     justify-content: space-around;
 }
-article {
+.card {
     margin: 0% 0.2%;
+    width: 15%;
 }
 img {
-    width: 16vw;
-    height: 16vh;
+    width: 100%;
     border-radius: 13px;
 }
 .subtitulos {

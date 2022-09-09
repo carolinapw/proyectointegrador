@@ -9,16 +9,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
 }
 .contlogo {
     width: 15%;
 }
 .logo {
-    width: 14vw;
-    height: 9vh;
+    width: 100%;
 }
 .navegacion {
     width: 65%;
+    margin-top: 1.5%;
 }
 .opciones {
     text-decoration: none;
@@ -28,11 +29,13 @@ header {
 .formulario {
     width: 20%;
 }
-section {
+.seccion {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .imagen {
     width: 50%;
@@ -42,7 +45,6 @@ section {
     border-radius: 12px;
     margin-left: 60px;
 }
-
 .contcalificacion {
     width: 50%;
 }
