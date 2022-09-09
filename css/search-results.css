@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contlogo {
+    width: 15%;
+}
+.logo {
+    width: 14vw;
+    height: 9vh;
+}
+.navegacion {
+    width: 65%;
+}
+.formulario {
+    width: 20%;
+}
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+}
+.container {
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
