@@ -5,6 +5,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
 }
 .contlogo {
     width: 15%;
@@ -15,9 +16,24 @@ header {
 }
 .navegacion {
     width: 65%;
+    margin-top: 1.5%;
+}
+.opciones {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
 }
 .formulario {
     width: 20%;
+}
+.search {
+    border-radius: 9px;
+    background-color: #000C54;
+    margin-top: 8%;
+    border: 1px white solid;
+}
+.boton {
+    color: white;
 }
 body {
     background-color: #000C54;
@@ -34,6 +50,7 @@ body {
 }
 .h1fav {
     padding: 20px;
+    color: white;
 }
 .fav1 {
     width: 450px;
@@ -41,6 +58,7 @@ body {
     align-self: center;
     border-radius: 13px;
     box-shadow: -10px 10px 20px black
+    
     
 }
 .fav2 {
@@ -53,6 +71,11 @@ body {
 }
 .titfav1 {
     align-items: center;
+    color: white;
+}
+.titfav2 {
+    align-items: center;
+    color: white;
 }
 .footer1 {
     float: inline-end;
