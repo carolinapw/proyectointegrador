@@ -1,7 +1,18 @@
 * {
     box-sizing: border-box;
 }
-
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.contlogo {
+    width: 15%;
+}
+.logo {
+    width: 100%;
+}
 body {
     background-color: #000C54;
     font-family: Avenir,sans-serif;
@@ -15,23 +26,26 @@ body {
     padding-left: 3%;
     padding-right: 3%;
 }
-div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+
 img {
     border-radius: 4px;
-    float: left;
     margin: 20px;
     width: 100%;
 }
 .gossipgirl {
     width: 50%;
     align-items: flex-start;
+    padding: 5%;
 }
-tit.gossip {
-    width: 50%;
+.gossipgirl img {
+    width: 100%;
+    margin: 0;
+}
+.titgossip {
+    width: 20%;
+    text-align: center;
+    margin-left: 5%;
+    padding-bottom: 20%;
 }
 .gossipgirl.h4 {
     text-align: center;
