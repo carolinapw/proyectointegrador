@@ -5,6 +5,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
 }
 .contlogo {
     width: 15%;
@@ -15,9 +16,24 @@ header {
 }
 .navegacion {
     width: 65%;
+    margin-top: 1.5%;
+}
+.opciones {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
 }
 .formulario {
     width: 20%;
+}
+.search {
+    border-radius: 9px;
+    background-color: #000C54;
+    margin-top: 8%;
+    border: 1px white solid;
+}
+.boton {
+    color: white;
 }
 body {
     background-color: #000C54;
@@ -32,6 +48,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+.ofertas {
+    color: white;
+}
 .card {
     margin: 0% 0.2%;
     width: 15%;
@@ -39,4 +58,10 @@ body {
 img {
     width: 100%;
     border-radius: 13px;
+}
+.subtitulos {
+    margin-bottom: 5%;
+}
+.descripcion {
+    color: white;
 }
