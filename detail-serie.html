@@ -9,17 +9,25 @@
     <title>Detalle Serie</title>
 </head>
 <body>
-<<<<<<< HEAD
-=======
     <header>
-        <img class="logo" src="./img/disney-plus-logo.png">
-        <nav class="opciones">
-            <a href="./index.html">Home</a> 
-            <a href="./detail-movie.html">Movies</a>
-            <a href="./detail-serie.html">Series</a>
-            <a href="./favoritos.html">Favoritos</a>
-            <a href="./genres.html">Generos</a>
-            <a href="./search-results.html">Resultados</a>
+        <div class="contlogo">
+            <img class="logo" src="./img/disneyplus_lob_log_forcd.png">
+        </div>
+        <nav class="navegacion">
+            <ul>
+            <li class="lista"><a class="opciones" href="./index.html">Home</a></li>
+            <li class="lista"><a class="opciones" href="./detail-movie.html">Movies</a></li>
+            <li class="lista"><a class="opciones" href="./detail-serie.html">Series</a></li>
+            <li class="lista"><a class="opciones" href="./favoritos.html">Favorites</a></li>
+            <li class="lista"><a class="opciones" href="./genres.html">Genres</a></li>
+            <li class="lista"><a class="opciones" href="./search-results.html">Results</a></li>
+            </ul>
+        </nav>
+        <nav class="formulario">
+            <form action="./search-results.html" method="get">
+                <input class="search barra" type="text" name="buscador" value="" placeholder="Buscador">
+                <button class="search boton" type="submit">Buscar</button>
+            </form>
         </nav>
     </header>
     <main>
@@ -29,15 +37,16 @@
             </div>
             <div class="titgossip">
                 <h1>Gossip Girl</h1>
+                <br>
+                <br>
                 <h3>Calificacion</h3>
             </div>
         </section>
-        <section>
+        <section class="section2">
             <article class="datosserie">
                 <h3>Fecha de estreno</h3>
                 <h3>Temporadas</h3>
                 <h3>Genero</h3>
-
             </article>
             <article class="descripcionserie">
                 <h3>Sinopsis</h3>
