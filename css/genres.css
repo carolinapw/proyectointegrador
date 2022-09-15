@@ -50,6 +50,7 @@ body {
 }
 .ofertas {
     color: white;
+    font-size: 30px;
 }
 .card {
     margin: 0% 0.2%;
@@ -60,8 +61,24 @@ img {
     border-radius: 13px;
 }
 .subtitulos {
-    margin-bottom: 5%;
+    margin-bottom: 20%;
+    margin-top: 5%;
+
 }
 .descripcion {
     color: white;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
 }

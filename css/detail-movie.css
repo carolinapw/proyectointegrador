@@ -29,7 +29,15 @@ header {
 .formulario {
     width: 20%;
 }
-.seccion {
+.seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.seccion2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -87,4 +95,54 @@ a {
     margin-right: 5px;
     color: white;
 }
-
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
+}
+@media (max-width: 1060px) {
+    .titulo {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    .calificacion {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 53px;
+    }
+    .calificacion {
+        margin: 2%;
+    }
+    .fa-star {
+        font-size: 12px;
+    }
+}
+@media (max-width: 425px) {
+    .seccion1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .imagen {
+        width: 100%;
+    }
+    .contcalificacion {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
