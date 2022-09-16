@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+}
 header {
     display: flex;
     flex-wrap: wrap;
@@ -11,12 +15,19 @@ header {
     width: 15%;
 }
 .logo {
-    width: 14vw;
-    height: 9vh;
+    width: 75%;
 }
 .navegacion {
     width: 65%;
     margin-top: 1.5%;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lista {
+    list-style: none;
 }
 .opciones {
     text-decoration: none;
@@ -34,10 +45,6 @@ header {
 }
 .boton {
     color: white;
-}
-body {
-    background-color: #000C54;
-    font-family: Avenir,sans-serif;
 }
 .container {
     margin-top: 35px;
@@ -72,10 +79,12 @@ body {
 .titfav1 {
     align-items: center;
     color: white;
+    font-size: 22px;
 }
 .titfav2 {
     align-items: center;
     color: white;
+    font-size: 22px;
 }
 .footer1 {
     float: inline-end;
