@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/detail-genres.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Detalle géneros</title>
 </head>
 <body>
@@ -14,12 +16,12 @@
         </div>
         <nav class="navegacion">
             <ul>
-            <li class="lista"><a class="opciones" href="./index.html">Home</a></li>
-            <li class="lista"><a class="opciones" href="./detail-movie.html">Movies</a></li>
-            <li class="lista"><a class="opciones" href="./detail-serie.html">Series</a></li>
-            <li class="lista"><a class="opciones" href="./favoritos.html">Favorites</a></li>
-            <li class="lista"><a class="opciones" href="./genres.html">Genres</a></li>
-            <li class="lista"><a class="opciones" href="./search-results.html">Results</a></li>
+                <li class="lista"><a class="opciones" href="./index.html">Home</a></li>
+                <li class="lista"><a class="opciones" href="./detail-movie.html">Movies</a></li>
+                <li class="lista"><a class="opciones" href="./detail-serie.html">Series</a></li>
+                <li class="lista"><a class="opciones" href="./favoritos.html">Favorites</a></li>
+                <li class="lista"><a class="opciones" href="./genres.html">Genres</a></li>
+                <li class="lista"><a class="opciones" href="./search-results.html">Results</a></li>
             </ul>
         </nav>
         <nav class="formulario">
@@ -28,6 +30,30 @@
                 <button class="search boton" type="submit">Buscar</button>
             </form>
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
+    <main>
+        <h2>Recomendaciones por generos</h2>
+        <section class="accion">
+            <h2>Accion</h2>
+                <article class="card">
+                    <a href="./detail-movie.html"><img src="./img/jungle cruise.jpeg"></a>
+                    <h4 class="subtitulos descripcion">Jungle Cruise</h4>
+                    <p class="fechas descripcion">Julio 2021</p>
+                </article>
+                <article class="card">
+                    <a href="./detail-movie.html"><img src="./img/venom.jpeg"></a>
+                    <h4 class="subtitulos descripcion">Venom</h4>
+                    <p class="fechas descripcion">Agosto 2022</p>
+                </article>
+                <article class="card">
+                    <a href="./detail-movie.html"><img src="./img/spiderman.jpeg"></a>
+                    <h4 class="subtitulos descripcion">Spiderman</h4>
+                    <p class="fechas descripcion">Diciembre 2021</p>
+                </article>
+                
+
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,79 @@
+/* Css común para todas las páginas */
+
+header {
+    align-items: center;
+    margin-bottom: 30px;
+}
+.navegacion,
+.navegacion ul{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 3%;
+}
+
+.navegacion ul {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.opciones{
+    margin: 0;
+}
+
+a.opciones {
+    padding-top: 0;
+}
+.formulario input[type="text"] {
+    width: 57%;
+}
+.search {
+    margin-top: 0;
+}
+header .fa-bars {
+    color: #fff;
+    display: none;
+}
+
+.fav {
+    margin-top: 40px;
+}
+.fav p {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fav a {
+    padding: 0;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        justify-content: flex-end;
+    }
+    .contlogo {
+        margin-right: auto;
+        width: 30%;
+    }
+    
+    header .fa-bars {
+        display: inline-block;
+    }
+    .navegacion {
+        display: none;
+    }
+    .formulario {
+        width: auto;
+        margin-right: 5%;
+    }
+    .formulario input[type="text"] {
+        width: auto;
+    }
+
+    
+}
