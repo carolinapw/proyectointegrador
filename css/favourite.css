@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #000C54;
+    font-family: Avenir,sans-serif;
+}
 header {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +22,14 @@ header {
     width: 65%;
     margin-top: 1.5%;
 }
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lista {
+    list-style: none;
+}
 .opciones {
     text-decoration: none;
     color: white;
@@ -34,10 +46,6 @@ header {
 }
 .boton {
     color: white;
-}
-body {
-    background-color: #000C54;
-    font-family: Avenir,sans-serif;
 }
 .container {
     margin-top: 35px;

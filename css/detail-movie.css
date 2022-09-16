@@ -21,6 +21,14 @@ header {
     width: 65%;
     margin-top: 1.5%;
 }
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lista {
+    list-style: none;
+}
 .opciones {
     text-decoration: none;
     color: white;
@@ -28,6 +36,15 @@ header {
 }
 .formulario {
     width: 20%;
+}
+.search {
+    border-radius: 9px;
+    background-color: #000C54;
+    margin-top: 8%;
+    border: 1px white solid;
+}
+.boton {
+    color: white;
 }
 .seccion1 {
     display: flex;
