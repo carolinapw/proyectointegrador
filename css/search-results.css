@@ -46,3 +46,18 @@ ul {
 .boton {
     color: white;
 }
+.resultadoscoco {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.foto {
+    width: 50%;
+}
+.coco {
+    width: 100%;
+    border-radius: 12px;
+}
