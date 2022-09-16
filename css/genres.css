@@ -40,9 +40,6 @@ body {
     font-family: Avenir,sans-serif;
 }
 .container {
-    margin-top: 35px;
-    margin-left: 35px;
-    margin-right: 35px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -61,9 +58,7 @@ img {
     border-radius: 13px;
 }
 .subtitulos {
-    margin-bottom: 20%;
-    margin-top: 5%;
-
+    margin-bottom: 5%;
 }
 .descripcion {
     color: white;
