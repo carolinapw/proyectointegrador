@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/detail-genres.css">
     <title>Detalle géneros</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo.png">
-        <nav>
-            <a class="opciones" href="./index.html">Home</a> 
-            <a class="opciones" href="./detail-movie.html">Movies</a>
-            <a class="opciones" href="./detail-serie.html">Series</a>
-            <a class="opciones" href="./favoritos.html">Favorites</a>
-            <a class="opciones" href="./genres.html">Genres</a>
-            <a class="opciones" href="./search-results.html">Results</a>
+        <div class="contlogo">
+            <img class="logo" src="./img/disneyplus_lob_log_forcd.png">
+        </div>
+        <nav class="navegacion">
+            <ul>
+            <li class="lista"><a class="opciones" href="./index.html">Home</a></li>
+            <li class="lista"><a class="opciones" href="./detail-movie.html">Movies</a></li>
+            <li class="lista"><a class="opciones" href="./detail-serie.html">Series</a></li>
+            <li class="lista"><a class="opciones" href="./favoritos.html">Favorites</a></li>
+            <li class="lista"><a class="opciones" href="./genres.html">Genres</a></li>
+            <li class="lista"><a class="opciones" href="./search-results.html">Results</a></li>
+            </ul>
+        </nav>
+        <nav class="formulario">
+            <form action="./search-results.html" method="get">
+                <input class="search barra" type="text" name="buscador" value="" placeholder="Buscador">
+                <button class="search boton" type="submit">Buscar</button>
+            </form>
         </nav>
     </header>
 </body>
