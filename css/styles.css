@@ -113,7 +113,13 @@ img {
     .formulario {
         width: 28%;
     }
+}
+@media (max-width: 425px) {
+    .card {
+        width: 47%;
+    }
     
 }
+
 
 

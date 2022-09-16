@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/detail-movie.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Detalle película</title>
 </head>
 <body>
     <header>
         <div class="contlogo">
-            <img class="logo" src="./img/logo.png">
+            <img class="logo" src="./img/disneyplus_lob_log_forcd.png">
         </div>
         <nav class="navegacion">
-            <a class="opciones" href="./index.html">Home</a> 
-            <a class="opciones" href="./detail-movie.html">Movies</a>
-            <a class="opciones" href="./detail-serie.html">Series</a>
-            <a class="opciones" href="./favoritos.html">Favorites</a>
-            <a class="opciones" href="./genres.html">Genres</a>
-            <a class="opciones" href="./search-results.html">Results</a>
+            <ul>
+                <li class="lista"><a class="opciones" href="./index.html">Home</a></li>
+                <li class="lista"><a class="opciones" href="./detail-movie.html">Movies</a></li>
+                <li class="lista"><a class="opciones" href="./detail-serie.html">Series</a></li>
+                <li class="lista"><a class="opciones" href="./favoritos.html">Favorites</a></li>
+                <li class="lista"><a class="opciones" href="./genres.html">Genres</a></li>
+                <li class="lista"><a class="opciones" href="./search-results.html">Results</a></li>
+            </ul>
         </nav>
         <nav class="formulario">
             <form action="./search-results.html" method="get">
-                <input type="text" name="buscador" value="" placeholder="Buscador">
-                <button type="submit">Buscar</button>
+                <input class="search barra" type="text" name="buscador" value="" placeholder="Buscador">
+                <button class="search boton" type="submit">Buscar</button>
             </form>
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
     <main>
         <section class="seccion1">
@@ -60,7 +65,7 @@
                 <p>Un músico que ha perdido su pasión por la música es transportado fuera de su cuerpo y debe encontrar el camino de regreso con la ayuda de un alma infantil que aprende sobre sí misma.</p>
                 <div class="fav">
                     <a href="./favoritos.html"><i class="fa-solid fa-heart"></i></a>
-                    <h3 class="info">Agregar a favoritos</h3>
+                    <p class="info">Agregar a favoritos</p>
                 </div>
             </article>
         </section>
