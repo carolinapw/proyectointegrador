@@ -87,9 +87,6 @@ h1 {
     font-size: 60px;
     margin-bottom: 10px;
 }
-h3 {
-    margin-top: 10px;
-}
 .gossipgirl.h4 {
     text-align: center;
     margin-top: 20px;
@@ -107,7 +104,6 @@ article.datosserie {
 article.descripcionserie {
     width: 50%;
 }
-
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -122,9 +118,16 @@ article.descripcionserie {
     color: #C4C4C4;
     margin: 5px 9px;
 }
-
-
-
+.fav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+a {
+    padding-top: 20px;
+    margin-right: 5px;
+    color: white;
+}
 @media(max-widht: 414px){
     img {
         float: none;
