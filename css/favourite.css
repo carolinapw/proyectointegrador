@@ -15,8 +15,7 @@ header {
     width: 15%;
 }
 .logo {
-    width: 14vw;
-    height: 9vh;
+    width: 75%;
 }
 .navegacion {
     width: 65%;
@@ -80,10 +79,12 @@ ul {
 .titfav1 {
     align-items: center;
     color: white;
+    font-size: 22px;
 }
 .titfav2 {
     align-items: center;
     color: white;
+    font-size: 22px;
 }
 .footer1 {
     float: inline-end;
