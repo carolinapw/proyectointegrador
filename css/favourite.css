@@ -56,10 +56,8 @@ ul {
     justify-content: space-around;
     width: 100%;
 }
-.h1fav {
-    padding: 0px 20px;
+.h2fav {
     color: white;
-    font-size: 250%;
 }
 .imgfav {
     width: 35%;
@@ -106,7 +104,7 @@ ul {
     margin: 5px 9px;
 }
 @media (max-width: 1060px) {
-    .h1fav {
+    .h2fav {
         font-size: 35px;
     }
     .container {
