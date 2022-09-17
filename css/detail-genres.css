@@ -67,3 +67,51 @@ img {
 .fechas {
     margin-top: 0.5%;
 }
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
+}
+@media (max-width: 1040px) {
+    .navegacion {
+        width: 60%;
+    }
+    .formulario {
+        width: 20%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .contlogo {
+        width: 15%;
+    }
+    .navegacion {
+        width: 57%;
+    }
+    .opciones {
+        margin: 8px;
+    
+    }
+    .card {
+        width: 30%;
+        margin: 0% 0.1%;
+    }
+    .formulario {
+        width: 28%;
+    }
+}
+@media (max-width: 425px) {
+    .card {
+        width: 47%;
+    }
+    
+}

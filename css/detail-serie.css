@@ -82,6 +82,7 @@ img.logo {
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 90px;
+    text-align: center;
 }
 h1 {
     font-size: 60px;
@@ -128,10 +129,32 @@ a {
     margin-right: 5px;
     color: white;
 }
-@media(max-widht: 414px){
-    img {
-        float: none;
-        width: 250px;
-        height: 150px;
+@media (max-width: 768px) {
+    .titulogossip {
+        font-size: 53px;
+        text-align: center;
+    }
+    .calificaciongossip {
+        margin: 2%;
+    }
+    .fa-star {
+        font-size: 12px;
+    }
+}
+@media (max-width: 425px) {
+    .cont1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .gossipgirl {
+        width: 100%;
+    }
+    .titgossip {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }

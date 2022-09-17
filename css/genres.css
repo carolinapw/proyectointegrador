@@ -89,8 +89,7 @@ img {
     }
     .formulario {
         width: 20%;
-    }
-    
+    }   
 }
 @media (max-width: 768px) {
     .contlogo {
@@ -115,5 +114,4 @@ img {
     .card {
         width: 47%;
     }
-    
 }

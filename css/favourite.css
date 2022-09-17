@@ -48,43 +48,42 @@ ul {
 }
 .container {
     margin-top: 60px;
-    margin-left: 35px;
-    margin-right: 35px;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 .h1fav {
     padding: 0px 20px;
     color: white;
+    font-size: 250%;
 }
 .fav1 {
     width: 450px;
     height: 250px;
     align-self: center;
     border-radius: 13px;
-    box-shadow: -10px 10px 20px black
-    
-    
+    box-shadow: -10px 10px 20px white
 }
 .fav2 {
     width: 450px;
     height: 250px;
     align-self: center;
     border-radius: 13px;
-    box-shadow: -10px 10px 20px black
-    
+    box-shadow: -10px 10px 20px white
 }
 .titfav1 {
-    align-items: center;
+    text-align: center;
     color: white;
-    font-size: 22px;
+    font-size: 25px;
 }
 .titfav2 {
-    align-items: center;
+    text-align: center;
     color: white;
-    font-size: 22px;
+    font-size: 25px;
 }
 .footer1 {
     float: inline-end;
@@ -102,4 +101,33 @@ ul {
 .integrantes {
     color: #C4C4C4;
     margin: 5px 9px;
+}
+@media (max-width: 1060px) {
+    .h1fav {
+        font-size: 35px;
+    }
+    .titfav1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .titfav2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .h1fav {
+        font-size: 20px;
+    }
+    .titfav1 {
+        font-size: 20px;
+    }
+    .titfav2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px){
+    .imgfav {
+        width: 100%;
+    }
 }
