@@ -15,7 +15,7 @@ header {
     width: 15%;
 }
 .logo {
-    width: 100%;
+    width: 75%;
 }
 .navegacion {
     width: 65%;
@@ -114,6 +114,20 @@ p {
 }
 .favorito {
     font-weight: bold;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+.iconos {
+    color: white;
+    margin: 5px 9px;
+}
+.integrantes {
+    color: #C4C4C4;
+    margin: 5px 9px;
 }
 @media (max-width: 1060px) {
     .titulococo {
