@@ -73,6 +73,9 @@ img {
 .descripcion {
     color: white;
 }
+footer {
+    margin-top: 5%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;

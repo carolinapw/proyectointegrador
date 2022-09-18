@@ -115,6 +115,9 @@ p {
 .favorito {
     font-weight: bold;
 }
+footer {
+    margin-top: 5%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;

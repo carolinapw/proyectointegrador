@@ -73,6 +73,9 @@ img {
 .fechas {
     margin-top: 0.5%;
 }
+footer {
+    margin-top: 5%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;

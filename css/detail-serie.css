@@ -107,6 +107,9 @@ article.datosserie {
 article.descripcionserie {
     width: 50%;
 }
+footer {
+    margin-top: 5%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;

@@ -112,6 +112,9 @@ a {
     margin-right: 5px;
     color: white;
 }
+footer {
+    margin-top: 5%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;

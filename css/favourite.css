@@ -88,6 +88,9 @@ ul {
     color: white;
     font-size: 25px;
 }
+footer {
+    margin-top: 5%;
+}
 .footer1 {
     float: inline-end;
 }
