@@ -48,6 +48,7 @@ ul {
 }
 .ofertas {
     color: white;
+    margin-left: 10px;
 }
 .container {
     display: flex;
