@@ -21,7 +21,8 @@ img.logo {
     margin-right: 15px;
     margin-bottom: 15px;
 }
-.navegacion {
+nav.navegacion {
+    margin-top: -14px;
     width: 65%;
 }
 .lista {
@@ -36,7 +37,7 @@ img.logo {
 .formulario {
     width: 20%;
     padding-bottom: 1%;
-    margin-top: 1%;
+    margin-top: 0%;
 }
 .search {
     border-radius: 9px;
