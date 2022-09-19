@@ -125,6 +125,11 @@ p {
 .titsimilares {
     justify-content: space-around;
     color: white;
+    padding-left: 0px;
+}
+.listaparecidos {
+    list-style: none;
+    width: 28%;
 }
 .imgtit {
     width: 100%;
@@ -171,6 +176,9 @@ footer {
     .fa-star {
         font-size: 12px;
     }
+    .listaparecidos {
+        width: 44%;
+    }
 }
 @media (max-width: 425px) {
     .resultadoscoco {
@@ -186,6 +194,13 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    .titsimilares {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .listaparecidos {
         width: 100%;
     }
 }
