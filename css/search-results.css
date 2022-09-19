@@ -102,6 +102,9 @@ p {
 .cajadoscoco {
     width: 50%;
 }
+.cajaunococo a {
+    text-decoration: none;
+}
 .favcoco {
     display: flex;
     flex-wrap: wrap;

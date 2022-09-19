@@ -102,12 +102,15 @@ p {
 .cajados {
     width: 50%;
 }
+.cajauno a {
+    text-decoration: none;
+}
 .fav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-a {
+.cajados a {
     padding-top: 20px;
     margin-right: 5px;
     color: white;
