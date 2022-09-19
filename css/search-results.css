@@ -118,6 +118,23 @@ p {
 .favorito {
     font-weight: bold;
 }
+.titulosimilares {
+    color: white;
+    margin-left: 3%;
+}
+.titsimilares {
+    justify-content: space-around;
+    color: white;
+}
+.imgtit {
+    width: 100%;
+    border-radius: 12px;
+}
+.hiperv {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
 footer {
     margin-top: 5%;
 }
