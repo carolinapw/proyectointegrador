@@ -12,16 +12,13 @@ header {
     justify-content: space-between;
     padding-right: 3%;
 }
-
 .navegacion ul {
     width: 100%;
     margin-bottom: 0;
 }
-
 .opciones{
     margin: 0;
 }
-
 a.opciones {
     padding-top: 0;
 }
@@ -36,7 +33,6 @@ header .fa-bars {
     color: #fff;
     display: none;
 }
-
 .fav {
     margin-top: 40px;
 }
@@ -48,11 +44,6 @@ header .fa-bars {
 .fav a {
     padding: 0;
 }
-
-
-
-
-
 @media (max-width: 768px) {
     header{
         justify-content: flex-end;
@@ -61,7 +52,6 @@ header .fa-bars {
         margin-right: auto;
         width: 30%;
     }
-    
     header .fa-bars {
         display: inline-block;
     }
@@ -75,6 +65,4 @@ header .fa-bars {
     .formulario input[type="text"] {
         width: auto;
     }
-
-    
 }
