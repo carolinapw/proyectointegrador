@@ -63,10 +63,11 @@ nav.navegacion {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
+    margin-top: 8px;
 }
 .fotogossip {
     width: 100%;
-    box-shadow: -10px 10px 20px white
+    box-shadow: -9px 9px 20px white;
 }
 .gossipgirl {
     width: 50%;

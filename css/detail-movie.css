@@ -62,6 +62,7 @@ ul {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
+    margin-top: 8px;
 }
 .imagen {
     width: 50%;
@@ -69,7 +70,7 @@ ul {
 .soul {
     width: 100%;
     border-radius: 12px;
-    box-shadow: -10px 10px 20px white
+    box-shadow: -9px 9px 20px white;
 }
 .contcalificacion {
     width: 50%;

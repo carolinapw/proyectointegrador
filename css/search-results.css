@@ -61,6 +61,7 @@ ul {
 .coco {
     width: 100%;
     border-radius: 12px;
+    box-shadow: -9px 9px 20px white;
 }
 .contcoco {
     width: 50%;
@@ -90,6 +91,7 @@ ul {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
+    margin-top: 8px;
 }
 .infococo {
     color: white;
