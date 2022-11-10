@@ -57,8 +57,9 @@ ul {
     flex-direction: row;
     justify-content: space-around;
 }
-.card {
-    margin: 0% 0.2%;
+article {
+    /*margin: 0% 0.2%;
+    width: 15%;*/
     width: 15%;
 }
 img {
