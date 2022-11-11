@@ -104,3 +104,45 @@ fetch(url3)
         .catch(function(e){
             console.log(e)
         })
+
+//Buscador 
+let form = document.querySelector("form")
+let buscador = document.querySelector("#inputBusqueda")
+let errorBuscador = document.querySelector(".errorBuscador")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+   
+    if (buscador.value == "") {
+        alert("El campo buscador es obligatorio")
+    } else if (buscador.value.length < 3) {
+        alert("El campo requiere más de 3 caracteres")
+        
+    // } else {
+    //     this.submit()
+    }
+})
+
+
+
+
+
+
+//Formulario
+// let formulario = document.querySelector("form")
+// let emailError = document.querySelector(".emailError")
+
+// formulario.addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     //chequear que el campo email esté completo
+//     if (email.value == "") {
+//         alert("El campo es obligatorio")
+//         //rellenar el span con un mensaje
+//         emailError.innerText = "El campo email es obligatorio"
+//     } else if (pass.value == "") {
+//         alert("El campo contraseña es obligatorio")
+//     } else {
+//         this.submit()
+//     }
+// })
