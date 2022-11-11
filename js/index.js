@@ -114,12 +114,17 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
    
     if (buscador.value == "") {
-        alert("El campo buscador es obligatorio")
+        errorBuscador.innerText = "El campo buscador es obligatorio"
     } else if (buscador.value.length < 3) {
-        alert("El campo requiere más de 3 caracteres")
+        errorBuscador.innerText = "El campo buscador requiere más de 3 caracteres"
         
     // } else {
     //     this.submit()
     }
+
+})
+
+buscador.addEventListener("focus", function () {
+    errorBuscador.innerText = ""
 })
 
