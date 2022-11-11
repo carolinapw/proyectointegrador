@@ -118,8 +118,8 @@ form.addEventListener("submit", function (event) {
     } else if (buscador.value.length < 3) {
         errorBuscador.innerText = "El campo buscador requiere más de 3 caracteres"
         
-    // } else {
-    //     this.submit()
+    } else {
+        this.submit()
     }
 
 })
