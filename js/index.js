@@ -86,7 +86,7 @@ fetch(url3)
             return res.json();
         })
         .then(function(data){
-            console.log("------------------------------------",data);
+            console.log(data);
             let infoPeliculas = data.results
             let ofertas = document.querySelector(".ultimosLanzamientos")
             let todasLasPeliculas = []
@@ -123,26 +123,3 @@ form.addEventListener("submit", function (event) {
     }
 })
 
-
-
-
-
-
-//Formulario
-// let formulario = document.querySelector("form")
-// let emailError = document.querySelector(".emailError")
-
-// formulario.addEventListener("submit", function (event) {
-//     event.preventDefault();
-
-//     //chequear que el campo email esté completo
-//     if (email.value == "") {
-//         alert("El campo es obligatorio")
-//         //rellenar el span con un mensaje
-//         emailError.innerText = "El campo email es obligatorio"
-//     } else if (pass.value == "") {
-//         alert("El campo contraseña es obligatorio")
-//     } else {
-//         this.submit()
-//     }
-// })
