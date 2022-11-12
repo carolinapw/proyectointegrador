@@ -14,7 +14,7 @@ fetch (url)
         let similares= document.querySelector("#inputBusqueda")
         let todosLosSimilares= []
 
-        for (i=0; i<searchMovies.length; i++){
+        for (let i=0; i<searchMovies.length; i++){
             todosLosSimilares += `<ul class="titsimilares">
                                         <li class="listaparecidos">
                                             <a href="./detail-serie.html">
