@@ -1,7 +1,8 @@
-let url= `https://api.themoviedb.org/3/search/movie?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&query=${query}C&page=1&include_adult=false`
-
 let buscador = document.querySelector("#inputBusqueda")
 let query= buscador
+
+let url= `https://api.themoviedb.org/3/search/movie?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&query=${query}C&page=1&include_adult=false`
+
 
 fetch (url)
     .then (function(res){
@@ -31,3 +32,4 @@ fetch (url)
         console.log (e)
     })
 
+// Falta consultar el value y revisar el for//
