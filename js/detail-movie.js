@@ -37,5 +37,36 @@ fetch(url)
     console.log(e);
 })
 
+let favoritos = []
+let boton = document.querySelector("pagFavoritos")
+boton.addEventListener("click", function () {
+    favoritos.push(id)
+
+    if (favoritos.includes(id)) {
+        let indiceDePeli = favoritos.indexOf(id);
+        favoritos.splice(indiceDePeli, 1)
+        boton.innerText = "Agregar a Favoritos"
+
+    } else {
+        favoritos.push(id)
+        boton.innerText = "Quitar de favoritos"
+    }
+    let favsToString = JSON.stringify (favoritos)
+    localStorage.getItem("peliculasFavs", favsToString) 
+})
+
+
+//Puede tener o no
+//if (recuperoStorage !== null) {
+   // favoritos = JSON.parse(recuperoStorage)
+//}
+
+
+
+//Si el id está en el array, cambiamos el texto del botón
+//if (favoritos.includes(id)){
+   // boton.innerText = "Quitar de favoritos"
+//}
+
 
 // el for nos trae 2 objects
