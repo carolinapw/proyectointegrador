@@ -38,3 +38,5 @@ fetch(url)
     .catch(function (e){
         console.log(e);
 })
+
+// creo que esta mal linkeado, la foto no carga, algunas series tiran undefined//
