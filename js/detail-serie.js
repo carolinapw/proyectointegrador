@@ -14,15 +14,16 @@ fetch(url)
     console.log(data);
 
     let imagen = document.querySelector(".fotogossip");
-    let titulo = document.querySelector("h1");
-    let puntuacion = document.querySelector("h3");
+    let titulo = document.querySelector(".titulogossip");
+    let puntuacion = document.querySelector(".calificaciongossip");
     let estreno = document.querySelector(".estreno");
     let temporadas = document.querySelector(".temporadas");
-    let informacion = document.querySelector(".informacion");
     let genero = document.querySelector(".genero");
+    let informacion = document.querySelector(".informacion");
+    
 
-    imagen.src += data.backdrop_path;
-    titulo.innerText = data.original_name;
+    imagen.src += data.poster_path;
+    titulo.innerText = data.name;
     puntuacion.innerText = data.vote_average;
     estreno.innerText = data.first_air_date;
     temporadas.innerText = data.seasons;

@@ -38,35 +38,41 @@ fetch(url)
     })
 
 let favoritos = []
-let boton = document.querySelector("pagFavoritos")
-boton.addEventListener("click", function () {
-    favoritos.push(id)
+
+//Preguntamos al storage si tiene datos
+let recuperoStorage = localStorage.getItem("peliculasFavs")
+
+if (recuperoStorage !== null) {
+    //si tiene datos (o sea, no está null) lo guardamos en el array en formato string
+    favoritos = JSON.parse(recuperoStorage)
+}
+
+//let boton = document.querySelector(".pagFavoritos")
+let agregarFavs = document.querySelector(".agregarFavs")
+
+if (favoritos.includes(id)) {
+    agregarFavs.innerText = "Quitar de favoritos"
+}
+
+agregarFavs.addEventListener("click", function () {
 
     if (favoritos.includes(id)) {
-        let indiceDePeli = favoritos.indexOf(id);
-        favoritos.splice(indiceDePeli, 1)
-        boton.innerText = "Agregar a Favoritos"
-
+        //ver donde está 
+        let indiceDePeli = favoritos.indexOf(id)
+        //sacar la pelicula
+        favoritos.splice(indiceDePeli,1)
+        agregarFavs.innerText = "Agregar a Favoritos"
     } else {
         favoritos.push(id)
-        boton.innerText = "Quitar de favoritos"
+        agregarFavs.innerText = "Quitar de Favoritos"
     }
+
+    
+
+//Guardar los datos en localStorage
     let favsToString = JSON.stringify (favoritos)
-    localStorage.getItem("peliculasFavs", favsToString) 
+    localStorage.setItem("peliculasFavs", favsToString) 
 })
-
-
-//Puede tener o no
-//if (recuperoStorage !== null) {
-   // favoritos = JSON.parse(recuperoStorage)
-//}
-
-
-
-//Si el id está en el array, cambiamos el texto del botón
-//if (favoritos.includes(id)){
-   // boton.innerText = "Quitar de favoritos"
-//}
 
 
 // el for nos trae 2 objects
