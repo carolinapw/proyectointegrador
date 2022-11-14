@@ -15,7 +15,7 @@ fetch(url1)
             todasLasPeliculas += `<article class="card">
                                     <img src="https://image.tmdb.org/t/p/w500${infoPeliculas[i].poster_path}" alt="${infoPeliculas[i].title}">
                                     <h4 class="subtitulos descripcion"><a href="detail-movie.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].title}</a></h4>
-                                    <p class="fechas descripcion">${infoPeliculas[i].release_date}
+                                    <p class="fechas descripcion">${infoPeliculas[i].release_date}</p>
                                 </article>`
         }
         ofertas.innerHTML = todasLasPeliculas
