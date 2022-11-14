@@ -41,3 +41,47 @@ fetch(url)
 })
 
 // creo que esta mal linkeado, la foto no carga, algunas series tiran undefined//
+
+//Botón "Ver recomendaciones"
+let urlRecomedaciones = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+
+fetch(urlRecomedaciones)
+    .then(function(res){
+    return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        let infoRecomendaciones = data.results
+        let lista = document.querySelector(".recomendaciones")
+        let todasLasRecomendaciones = []
+
+        for (let i = 0; i< 6; i++) {
+            todasLasRecomendaciones += `<li class="peliculasSimilares">
+                                            <img class="imgSimilares" src="https://image.tmdb.org/t/p/w500${infoRecomendaciones[i].poster_path}">
+                                            <h4 class="info"><a href="./detail-movie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].name}</a></h4>
+                                        </li>`
+           
+        }
+        lista.innerHTML = todasLasRecomendaciones
+
+        
+        let verRecomendaciones = document.querySelector(".button")
+        
+        verRecomendaciones.addEventListener("click", function () {
+
+            if (verRecomendaciones.innerText == "Ver recomendaciones") {
+                lista.style.display = "flex";
+                this.innerText = "Ocultar recomendaciones";
+            } else {
+                lista.style.display = "none"
+                this.innerText = "Ver recomendaciones"
+            }
+
+        })
+        
+    })
+
+    .catch(function (e){
+    console.log(e);
+    })
