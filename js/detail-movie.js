@@ -136,17 +136,26 @@ fetch(urlRecomedaciones)
 
         })
         
+        verRecomendaciones.addEventListener("mouseover", function () {
+            verRecomendaciones.style.backgroundColor = "#6C94FF"
+            verRecomendaciones.style.borderColor = "#6C94FF"
+        })
+
+        verRecomendaciones.addEventListener("mouseout", function () {
+            verRecomendaciones.style.backgroundColor = "#000C54"
+            verRecomendaciones.style.borderColor = "white"
+        })
     })
 
     .catch(function (e){
     console.log(e);
     })
 
-    let urlReview = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+let urlReview = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
 
-    fetch(urlReview)
+fetch(urlReview)
     .then(function(res){
-    return res.json();
+        return res.json();
     })
     .then(function(data){
         console.log(data);
@@ -158,15 +167,17 @@ fetch(urlRecomedaciones)
         for (let i = 0; i< 4; i++) {
             todaslasReviews += `<article class="cajacuatro">
                                     <h2 class="usuario">Usuario:${reviewsUsuarios[i].author}</h2>
-                                    <article class="cajacuatro"><p class="reviewUsusario">${reviewsUsuarios[i].content}</p>
+                                    <p class="reviewUsuario">${reviewsUsuarios[i].content}</p>
                                 </article>`
 
            
         }
         nombre.innerHTML = todaslasReviews
         
+        
     })
 
     .catch(function (e){
-    console.log(e);
+        console.log(e);
     })
+

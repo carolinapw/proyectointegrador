@@ -104,6 +104,23 @@ p {
 .cajados {
     width: 50%;
 }
+.button {
+    font-family: Avenir,sans-serif;
+    border-radius: 20px;
+    padding: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: #000C54;
+    color: white;
+   
+}
+/*.button:hover {
+    background-color: #008CBA;
+    color: white;
+    background-color: #000C54;
+
+}*/
 .recomendaciones {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +149,10 @@ p {
     padding-top: 20px;
     margin-right: 5px;
     color: white;
+}
+.opiniones {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 footer {
     margin-top: 5%;

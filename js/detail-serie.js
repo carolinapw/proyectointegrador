@@ -77,7 +77,17 @@ fetch(urlRecomedaciones)
                 lista.style.display = "none"
                 this.innerText = "Ver recomendaciones"
             }
+        
+        })
 
+        verRecomendaciones.addEventListener("mouseover", function () {
+            verRecomendaciones.style.backgroundColor = "#6C94FF"
+            verRecomendaciones.style.borderColor = "#6C94FF"
+        })
+
+        verRecomendaciones.addEventListener("mouseout", function () {
+            verRecomendaciones.style.backgroundColor = "#000C54"
+            verRecomendaciones.style.borderColor = "white"
         })
         
     })

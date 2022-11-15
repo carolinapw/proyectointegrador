@@ -42,6 +42,7 @@ ul {
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
+    font-size: 13px;
 }
 .search {
     border-radius: 9px;
@@ -96,6 +97,11 @@ footer {
 .integrantes {
     color: #C4C4C4;
     margin: 5px 9px;
+}
+.logoapi {
+    margin-left: 15vw;
+    margin-top: 25px;
+    border-radius: 0%;
 }
 @media (max-width: 1040px) {
     .navegacion {
