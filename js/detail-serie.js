@@ -85,3 +85,38 @@ fetch(urlRecomedaciones)
     .catch(function (e){
     console.log(e);
     })
+
+    let favoritos = []
+
+    //Preguntamos al storage si tiene datos
+    let recuperoStorage = localStorage.getItem("peliculasFavs")
+    
+    if (recuperoStorage !== null) {
+        //si tiene datos (o sea, no está null) lo guardamos en el array en formato string
+        favoritos = JSON.parse(recuperoStorage)
+    }
+    
+    //let boton = document.querySelector(".pagFavoritos")
+    let agregarFavs = document.querySelector(".agregarFavs")
+    
+    if (favoritos.includes(id)) {
+        agregarFavs.innerText = "Quitar de favoritos"
+    }
+    
+    agregarFavs.addEventListener("click", function () {
+    
+        if (favoritos.includes(id)) {
+            //ver donde está 
+            let indiceDePeli = favoritos.indexOf(id)
+            //sacar la pelicula
+            favoritos.splice(indiceDePeli,1)
+            agregarFavs.innerText = "Agregar a Favoritos"
+        } else {
+            favoritos.push(id)
+            agregarFavs.innerText = "Quitar de Favoritos"
+        }
+    
+        
+        let favsToString = JSON.stringify (favoritos)
+        localStorage.setItem("peliculasFavs", favsToString) 
+    })

@@ -62,8 +62,7 @@ agregarFavs.addEventListener("click", function () {
     }
 
     
-
-//Guardar los datos en localStorage
     let favsToString = JSON.stringify (favoritos)
     localStorage.setItem("peliculasFavs", favsToString) 
 })
+
