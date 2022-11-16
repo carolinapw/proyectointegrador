@@ -156,6 +156,11 @@ footer {
     margin-right: 5px;
     color: white;
 }
+.logoapi {
+    margin-left: 15vw;
+    margin-top: 25px;
+    border-radius: 0%;
+}
 @media (max-width: 768px) {
     .titulogossip {
         font-size: 53px;

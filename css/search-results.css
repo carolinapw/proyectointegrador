@@ -154,6 +154,11 @@ footer {
     color: #C4C4C4;
     margin: 5px 9px;
 }
+.logoapi {
+    margin-left: 15vw;
+    margin-top: 25px;
+    border-radius: 0%;
+}
 @media (max-width: 1060px) {
     .titulococo {
         font-size: 70px;
