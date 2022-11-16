@@ -28,8 +28,8 @@ fetch(url)
         informacion2.innerText = data.runtime;
         informacion3.innerText = data.overview;
         genero.innerText = data.genres;
-        for( let i=0; i < genres.length; i++){
-            genero.innerText = data.genres[i]['name'];
+        for( let i=0; i < data.genres.length; i++){
+            genero.innerText += data.genres[i]['name'];
         }
 
     })
@@ -80,23 +80,36 @@ agregarFavs.addEventListener("click", function () {
 //Watch Providers
 let urlProviders = `https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=d7dce97c9f45ff25eeb66dc3784d0bca`
 
-fetch(url)
+fetch(urlProviders)
     .then(function(res){
     return res.json();
     })
     .then(function(data){
         console.log(data);
 
-        let imgProviders = document.querySelector(".imgProviders")
-        let nameProviders = document.querySelector(".nameProviders")
+        let infoProviders = data.results
+        let nombresProviders = document.querySelector(".plataformas")
+        let todaslasPlataformas = []
 
-        imgProviders.src += data.logo_path
-        nameProviders.innerText = data.provider_name
+        for (let i = 0; i <6; i++) {
+            todaslasPlataformas += `<li>
+                                        <img class="imgProviders" src="https://image.tmdb.org/t/p/w500${infoProviders[i].logo_path}" alt="">
+                                        <h2 class="nameProviders">${infoProviders[i].provider_name}</h2>
+                                    </li>`
+        }
+
+        nombresProviders.innerHTML = todaslasPlataformas
+
+        // let imgProviders = document.querySelector(".imgProviders")
+        // let nameProviders = document.querySelector(".nameProviders")
+
+        // imgProviders.src += data.logo_path
+        // nameProviders.innerText = data.provider_name
 
     })
-    .catch(function (e){
-    console.log(e);
-    })
+    // .catch(function (e){
+    // console.log(e);
+    // })
 
 //Botón "Ver recomendaciones"
 let urlRecomedaciones = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`

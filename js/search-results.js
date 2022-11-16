@@ -1,7 +1,9 @@
 let buscador = document.querySelector("#inputBusqueda")
-let query = buscador
+let query = buscador.value
 
-let urlMovie = `https://api.themoviedb.org/3/search/movie?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&query=${query}C&page=1&include_adult=false`
+console.log(query);
+
+let urlMovie = `https://api.themoviedb.org/3/search/movie?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&query=${query}&page=1&include_adult=false`
 
 
 fetch (urlMovie)
@@ -11,7 +13,7 @@ fetch (urlMovie)
     .then (function(data){
         console.log (data)
         let searchMovies = data.results
-        let similares = document.querySelector("#inputBusqueda")
+        let similares = document.querySelector(".titsimilares")
         let todosLosSimilares= []
 
         for (let i=0; i<searchMovies.length; i++){
