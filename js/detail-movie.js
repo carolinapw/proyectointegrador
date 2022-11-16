@@ -89,11 +89,11 @@ fetch(urlProviders)
     .then(function(data){
         console.log(data);
 
-        let infoProviders = data.results
+        let infoProviders = data.results.US.flatrate
         let nombresProviders = document.querySelector(".plataformas")
         let todaslasPlataformas = []
 
-        for (let i = 0; i <6; i++) {
+        for (let i = 0; i <infoProviders.length; i++) {
             todaslasPlataformas += `<li>
                                         <img class="imgProviders" src="https://image.tmdb.org/t/p/w500${infoProviders[i].logo_path}" alt="">
                                         <h2 class="nameProviders">${infoProviders[i].provider_name}</h2>
