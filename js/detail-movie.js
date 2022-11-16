@@ -19,7 +19,7 @@ fetch(url)
         let informacion1 = document.querySelector(".data1");
         let informacion2 = document.querySelector(".data2");
         let informacion3 = document.querySelector(".data3");
-        let genero = document.querySelector(".genero");
+        let genero = document.querySelector(".generosDiv");
 
         imagen.src += data.poster_path;
         titulo.innerText = data.title;
@@ -27,11 +27,11 @@ fetch(url)
         informacion1.innerText = data.release_date;
         informacion2.innerText = data.runtime;
         informacion3.innerText = data.overview;
-        genero.innerText = data.genres;
+        //genero.innerText = data.genres;
         for (let i=0; i < data.genres.length; i++){
-            generosDiv.innerHTML += `<a href="./detail-genres.html?id=${data.genres[i].id}"><p class="genero">${data.genres[i].name}</p></a>`
+            genero.innerHTML += `<a href="./detail-genres.html?id=${data.genres[i].id}"><p class="genero">${data.genres[i].name}</p></a>`
 
-            genero.innerText += data.genres[i]['name'];
+            //genero.innerText += data.genres[i]['name'];
         }
 
     })
