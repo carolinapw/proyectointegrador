@@ -28,7 +28,9 @@ fetch(url)
         informacion2.innerText = data.runtime;
         informacion3.innerText = data.overview;
         genero.innerText = data.genres;
-        for( let i=0; i < data.genres.length; i++){
+        for (let i=0; i < data.genres.length; i++){
+            generosDiv.innerHTML += `<a href="./detail-genres.html?id=${data.genres[i].id}"><p class="genero">${data.genres[i].name}</p></a>`
+
             genero.innerText += data.genres[i]['name'];
         }
 

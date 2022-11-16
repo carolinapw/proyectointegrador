@@ -3,6 +3,10 @@ let recuperoStorage = localStorage.getItem("peliculasFavs")
 let peliculas = JSON.parse(recuperoStorage)
 console.log(peliculas);
 
+
+
+let id = recuperoStorage.get("id")
+
 let favoritos = document.querySelector(".container")
 let todosLosFavoritos = []
 
@@ -11,7 +15,7 @@ for (let i = 0; i < peliculas.length; i++) {
      //Cada vuelta del for tiene que recuperar y mostrar en pantalla los datos de cada pelicula/serie favorita
     console.log(peliculas[i]);
     
-    let url1 = ""
+    let url1 = `https://api.themoviedb.org/3/movie/${id}?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US`
     
     fetch(url1)
         .then(function (res) {
