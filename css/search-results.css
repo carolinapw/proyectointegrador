@@ -98,20 +98,6 @@ ul {
 p {
     color: white;
 }
-.cajaunococo {
-    width: 50%;
-}
-.cajadoscoco {
-    width: 50%;
-}
-.cajaunococo a {
-    text-decoration: none;
-}
-.favcoco {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 .agregarfav {
     margin-right: 5px;
     color: white;
@@ -134,7 +120,7 @@ p {
     width: 28%;
 }
 .imgtit {
-    width: 100%;
+    width: 15%;
     border-radius: 12px;
 }
 footer {
