@@ -95,6 +95,17 @@ ul {
 .info {
     color: white;
 }
+.generosDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.genero {
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: white;*/
+    margin-right: 7px;
+}
 p {
     color: white;
 }
@@ -153,6 +164,26 @@ p {
 .opiniones {
     padding-left: 3%;
     padding-right: 3%;
+}
+.plataformas {
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.listaPlataformas {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.imgProviders {
+    width: 70px;
+}
+.nameProviders {
+    margin-left: 15px;
+    color: white;
 }
 footer {
     margin-top: 5%;
