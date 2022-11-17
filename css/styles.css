@@ -80,6 +80,7 @@ img {
 }
 .descripcion {
     color: white;
+    text-decoration: none;
 }
 footer {
     margin-top: 5%;

@@ -34,6 +34,11 @@ fetch (urlMovie)
         console.log (e)
     })
 
+// let explorar = document.querySelector(".titulosimilares")
+// let busqueda = buscador.value 
+// explorar.innerText = "Explora títulos similares a: " + 
+
+
 // Falta consultar el value y revisar el for//
 
 let favoritos = []

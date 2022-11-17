@@ -94,9 +94,9 @@ fetch(urlProviders)
         let todaslasPlataformas = []
 
         for (let i = 0; i <infoProviders.length; i++) {
-            todaslasPlataformas += `<li>
+            todaslasPlataformas += `<li class="listaPlataformas">
                                         <img class="imgProviders" src="https://image.tmdb.org/t/p/w500${infoProviders[i].logo_path}" alt="">
-                                        <h2 class="nameProviders">${infoProviders[i].provider_name}</h2>
+                                        <h4 class="nameProviders">${infoProviders[i].provider_name}</h4>
                                     </li>`
         }
 
