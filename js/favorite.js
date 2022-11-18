@@ -31,6 +31,28 @@ for (let i = 0; i < peliculas.length; i++) {
         })
     }
 
+    //Buscador 
+let form = document.querySelector("form")
+let buscador = document.querySelector("#inputBusqueda")
+let errorBuscador = document.querySelector(".errorBuscador")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+   
+    if (buscador.value == "") {
+        errorBuscador.innerText = "El campo buscador es obligatorio"
+    } else if (buscador.value.length < 3) {
+        errorBuscador.innerText = "El campo buscador requiere más de 3 caracteres"
+        
+    } else {
+        this.submit()
+    }
+
+})
+
+buscador.addEventListener("focus", function () {
+    errorBuscador.innerText = ""
+})
 
 
 
