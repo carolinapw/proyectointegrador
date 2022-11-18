@@ -14,7 +14,7 @@ fetch (urlGenerosPeliculas)
         for (let i=0; i<infoPeliculas.length; i++) {
             console.log(infoPeliculas[i]);
             todasLasPeliculas += `<article class="card">
-                                    <h3 class="subtitulos descripcion"><a href="./detail-genres.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].name}</a></h3>
+                                    <h3 class="subtitulos descripcion"><a href="./detail-genres.html?id=${infoPeliculas[i].id}&name=${infoPeliculas[i].name}">${infoPeliculas[i].name}</a></h3>
                                 </article>`
         }
         generos.innerHTML = todasLasPeliculas
