@@ -125,7 +125,7 @@ fetch(urlRecomedaciones)
 
         let infoRecomendaciones = data.results
         let lista = document.querySelector(".recomendaciones")
-        let todasLasRecomendaciones = []
+        let todasLasRecomendaciones = ""
 
         for (let i = 0; i< 6; i++) {
             todasLasRecomendaciones += `<li class="peliculasSimilares">
@@ -160,6 +160,28 @@ fetch(urlRecomedaciones)
             verRecomendaciones.style.backgroundColor = "#000C54"
             verRecomendaciones.style.borderColor = "white"
         })
+    })
+
+    .catch(function (e){
+    console.log(e);
+    })
+
+let urlTrailer = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US`
+
+fetch(urlTrailer)
+    .then(function(res){
+    return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        let trailer = data.results
+        let iFrame = document.querySelector(".trailer")
+      
+        iFrame.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${trailer[0].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        
+       
+    
     })
 
     .catch(function (e){
