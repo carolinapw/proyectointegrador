@@ -9,7 +9,6 @@ header {
     margin-top: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-right: 3%;
 }
 .navegacion ul {
@@ -21,6 +20,7 @@ header {
 }
 a.opciones {
     padding-top: 0;
+    margin: 35px;
 }
 .formulario input[type="text"] {
     width: 57%;
