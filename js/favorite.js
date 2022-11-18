@@ -7,8 +7,7 @@ console.log(peliculas);
 
 let id = recuperoStorage.get("id")
 
-let favoritos = document.querySelector(".container")
-let todosLosFavoritos = []
+
 
 //Recorremos el array y preguntamos por los datos de cada pelicula/serie
 for (let i = 0; i < peliculas.length; i++) {
@@ -23,15 +22,19 @@ for (let i = 0; i < peliculas.length; i++) {
         })
         .then(function(data){
             console.log(data);
+            let favoritos = document.querySelector(".container")
+            let todosLosFavoritos = []
             let infoPeliculas = data.results
+
             todosLosFavoritos += `<article class="imgfav">
                                      <a href="./detail-movie.html"><img src="https://image.tmdb.org/t/p/w500${infoPeliculas[i].poster_path}" alt="${infoPeliculas[i].title}">
                                     <a href="detail-movie.html?id=${infoPeliculas[i].id}"><h4 class="titfav1">${infoPeliculas[i].title}</h4></a>
                                   </article>`
+            favoritos.innerHTML = todosLosFavoritos
         })
     }
 
-favoritos.innerHTML = todosLosFavoritos
+
 
 
    
