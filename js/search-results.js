@@ -18,6 +18,7 @@ fetch (urlMovie)
         let similares = document.querySelector(".card")
         let todosLosSimilares= []
         for (let i=0; i<searchMovies.length; i++){
+            
             todosLosSimilares += `<section class="container similares">
                                     <article class="card">
                                         <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
