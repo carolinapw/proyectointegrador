@@ -12,6 +12,21 @@ fetch (urlMovie)
     })
     .then (function(data){
         console.log (data)
+<<<<<<< HEAD
+=======
+        let searchMovies = data.results
+        let similares = document.querySelector(".card")
+        let todosLosSimilares= []
+        for (let i=0; i<searchMovies.length; i++){
+            
+            todosLosSimilares += `<section class="container similares">
+                                    <article class="card">
+                                        <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
+                                        <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
+                                    </article>
+                                </section>`
+        }                           
+>>>>>>> 6b64f95d249e085b01c03e0147261d6487bb07c2
 
         if (query == ) {
             let explorar = document.querySelector(".titulosimilares")
