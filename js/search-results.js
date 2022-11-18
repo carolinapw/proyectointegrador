@@ -13,13 +13,13 @@ fetch (urlMovie)
     .then (function(data){
         console.log (data)
 
-        if (query == ) {
+        if (data.results.length == 0 ) {
             let explorar = document.querySelector(".titulosimilares")
             explorar.innerText = "No hay resultado para su búsqueda"
         } else {
             let searchMovies = data.results
             let similares = document.querySelector(".card")
-            let todosLosSimilares= []
+            let todosLosSimilares= ''
             for (let i=0; i<searchMovies.length; i++){
                 todosLosSimilares += `<article class="container similares">
                                         <div class="card">
@@ -29,8 +29,8 @@ fetch (urlMovie)
                                     </article>`
             }
        
+            similares.innerHTML = todosLosSimilares
         }                           
-        similares.innerHTML = todosLosSimilares
     })
 
     .catch (function(e){
