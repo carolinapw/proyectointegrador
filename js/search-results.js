@@ -6,40 +6,41 @@ let query = queryStringObj.get("buscador");
 let urlMovie = `https://api.themoviedb.org/3/search/movie?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&query=${query}&page=1&include_adult=false`
 
 
-
-
 fetch (urlMovie)
     .then (function(res){
         return res.json()
     })
     .then (function(data){
         console.log (data)
-        let searchMovies = data.results
-        let similares = document.querySelector(".card")
-        let todosLosSimilares= []
-        for (let i=0; i<searchMovies.length; i++){
-            todosLosSimilares += `<section class="container similares">
-                                    <article class="card">
-                                        <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
-                                        <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
-                                    </article>
-                                </section>`
+
+        if (query == ) {
+            let explorar = document.querySelector(".titulosimilares")
+            explorar.innerText = "No hay resultado para su búsqueda"
+        } else {
+            let searchMovies = data.results
+            let similares = document.querySelector(".card")
+            let todosLosSimilares= []
+            for (let i=0; i<searchMovies.length; i++){
+                todosLosSimilares += `<article class="container similares">
+                                        <div class="card">
+                                            <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
+                                            <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
+                                        </div>
+                                    </article>`
+            }
+       
         }                           
-
         similares.innerHTML = todosLosSimilares
-
     })
 
     .catch (function(e){
         console.log (e)
     })
 
-// let explorar = document.querySelector(".titulosimilares")
-// let busqueda = buscador.value 
-// explorar.innerText = "Explora títulos similares a: " + 
+let explorar = document.querySelector(".titulosimilares")
+let busqueda = buscador.value 
+explorar.innerText = "Explora títulos similares a: " + query
 
-
-// Falta consultar el value y revisar el for//
 
 let favoritos = []
 
