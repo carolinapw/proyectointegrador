@@ -7,23 +7,19 @@ fetch (urlGenerosPeliculas)
     })
     .then (function(data){
         console.log (data)
-        let infoPeliculas = data.results
-        let ofertas = document.querySelector(".populares")
-        let todasLasPeliculas = []
+        let infoPeliculas = data.genres
+        let generos = document.querySelector(".container")
+        let todasLasPeliculas = ""
 
-        for (let i=0; i<; i++) {
+        for (let i=0; i<infoPeliculas.length; i++) {
             console.log(infoPeliculas[i]);
-            todasLasPeliculas += ``
+            todasLasPeliculas += `<article class="card">
+                                    <h3 class="subtitulos descripcion"><a href="./detail-genres.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].name}</a></h3>
+                                </article>`
         }
-        ofertas.innerHTML = todasLasPeliculas
+        generos.innerHTML = todasLasPeliculas
     })
 
     .catch (function(e){
         console.log (e)
     })
-
-    <article class="card">
-    <img src="https://image.tmdb.org/t/p/w500${infoPeliculas[i].poster_path}" alt="${infoPeliculas[i].title}">
-    <h4 class="subtitulos descripcion"><a href="detail-movie.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].title}</a></h4>
-    <p class="fechas descripcion">${infoPeliculas[i].release_date}</p>
-</article>
