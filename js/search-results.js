@@ -18,15 +18,13 @@ fetch (urlMovie)
             explorar.innerText = "No hay resultado para su búsqueda"
         } else {
             let searchMovies = data.results
-            let similares = document.querySelector(".card")
+            let similares = document.querySelector(".container")
             let todosLosSimilares= ''
             for (let i=0; i<searchMovies.length; i++){
-                todosLosSimilares += `<article class="container similares">
-                                        <div class="card">
+                todosLosSimilares += `<div class="card">
                                             <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
                                             <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
-                                        </div>
-                                    </article>`
+                                    </div>`
             }
        
             similares.innerHTML = todosLosSimilares

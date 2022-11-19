@@ -157,8 +157,8 @@ footer {
     color: white;
 }
 .logoapi {
-    margin-left: 15vw;
-    margin-top: 25px;
+    margin-top: 14px;
+    width: 15%;
     border-radius: 0%;
 }
 @media (max-width: 768px) {

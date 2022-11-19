@@ -94,6 +94,7 @@ ul {
 }
 .info {
     color: white;
+    margin-top: 30px;
 }
 .usuario {
     color:white;
@@ -162,14 +163,42 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
 }
+.pagFavoritos {
+    font-family: Avenir,sans-serif;
+    border-radius: 20px;
+    padding: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: #000C54;
+    color: white;
+}
 .cajados a {
     padding-top: 20px;
     margin-right: 5px;
     color: white;
 }
+.trailer {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 8px;
+}
+.reviews {
+    padding-left: 3%;
+    padding-right: 3%;
+}
 .opiniones {
     padding-left: 3%;
     padding-right: 3%;
+}
+.usuario {
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.opiniones article p {
+    font-size: 13px;
 }
 .plataformas {
     padding-left: 0px;
@@ -185,11 +214,13 @@ p {
     margin-top: 8px;
 }
 .imgProviders {
-    width: 70px;
+    width: 73px;
+    height: 73px;
 }
 .nameProviders {
     margin-left: 15px;
     color: white;
+    margin-top: 20px;
 }
 footer {
     margin-top: 5%;
@@ -209,7 +240,8 @@ footer {
     margin: 5px 9px;
 }
 .logoapi {
-    margin-top: 25px;
+    margin-top: 14px;
+    width: 15%;
     border-radius: 0%;
     width: 20%;
 }
