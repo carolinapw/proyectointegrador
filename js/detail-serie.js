@@ -35,3 +35,31 @@ fetch(url)
     .catch(function(e){
         console.log(e);
     })
+
+let favoritos = []
+
+let recuperoStorage = localStorage.getItem("seriesFavs")
+
+if(recuperoStorage !== null){
+    favoritos = JSON.parse(recuperoStorage)
+}
+
+let agregarFavs = document.querySelector(".agregarFavs")
+
+if (favoritos.includes(id)) {
+    agregarFavs.innerText = "Quitar de favoritos"
+}
+
+agregarFavs.addEventListener("click", function() {
+    if (favoritos.includes(id)) {
+        let indiceDePeli = favoritos.indexOf(id)
+        favoritos.splice(indiceDePeli, 1)
+        agregarFavs.innerText = "Agregar a Favoritos"
+    } else {
+        favoritos.push(id)
+        agregarFavs.innerText = "Quitar de Favoritos"
+    }
+
+    let favsToString = JSON.stringify (favoritos)
+    localStorage.setItem("seriesFavs", favsToString)
+})
