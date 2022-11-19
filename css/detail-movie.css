@@ -95,6 +95,9 @@ ul {
 .info {
     color: white;
 }
+.usuario {
+    color:white;
+}
 .generosDiv {
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +120,9 @@ p {
 }
 .cajatres {
     margin-bottom: 15px
+}
+.trailer {
+    margin-left: 30px
 }
 .button {
     font-family: Avenir,sans-serif;
