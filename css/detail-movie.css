@@ -115,6 +115,9 @@ p {
 .cajados {
     width: 50%;
 }
+.cajatres {
+    margin-bottom: 15px
+}
 .button {
     font-family: Avenir,sans-serif;
     border-radius: 20px;
@@ -205,6 +208,9 @@ footer {
 .logoapi {
     margin-top: 25px;
     border-radius: 0%;
+}
+p.agregarFavs.info {
+    color: black;
 }
 @media (max-width: 1060px) {
     .titulo {
