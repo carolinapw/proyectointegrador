@@ -96,6 +96,7 @@ footer {
     margin-top: 14px;
     width: 15%;
     border-radius: 0%;
+    width: 20%;
 }
 @media (max-width: 1040px) {
     .navegacion {

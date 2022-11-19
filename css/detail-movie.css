@@ -96,6 +96,9 @@ ul {
     color: white;
     margin-top: 30px;
 }
+.usuario {
+    color:white;
+}
 .generosDiv {
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +118,12 @@ p {
 }
 .cajados {
     width: 50%;
+}
+.cajatres {
+    margin-bottom: 15px
+}
+.trailer {
+    margin-left: 30px
 }
 .button {
     font-family: Avenir,sans-serif;
@@ -237,6 +246,10 @@ footer {
     margin-top: 14px;
     width: 15%;
     border-radius: 0%;
+    width: 20%;
+}
+p.agregarFavs.info {
+    color: black;
 }
 @media (max-width: 1060px) {
     .titulo {
