@@ -95,7 +95,7 @@ fetch(url3)
                 console.log(infoPeliculas[i]);
                 todasLasPeliculas += `<article class="card"> 
                                         <img src="https://image.tmdb.org/t/p/w500${infoPeliculas[i].poster_path}" alt="${infoPeliculas[i].name}">
-                                        <h4 class="subtitulos descripcion"><a href="detail-movie.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].name}</a></p>
+                                        <h4 class="subtitulos descripcion"><a href="detail-serie.html?id=${infoPeliculas[i].id}">${infoPeliculas[i].name}</a></p>
                                         <p class="fechas descripcion">${infoPeliculas[i].first_air_date}</p>
                                     </article>`
             }
