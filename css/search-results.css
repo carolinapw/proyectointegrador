@@ -46,81 +46,20 @@ ul {
 .boton {
     color: white;
 }
-.resultadoscoco {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-.foto {
-    width: 50%;
-}
-.coco {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: -9px 9px 20px white;
-}
-.contcoco {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.titulococo {
-    text-align: center;
-    color: white;
-    font-size: 90px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.calificacioncoco {
-    color: white;
-    text-align: center;
-}
-.starcoco {
-    color: white;
-    display: flex;
-}
-.descripcioncoco {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-top: 8px;
-}
-.infococo {
-    color: white;
-}
-p {
-    color: white;
-}
-.agregarfav {
-    margin-right: 5px;
-    color: white;
-    align-self: center;
-}
-.favorito {
-    font-weight: bold;
-}
 .titulosimilares {
     color: white;
     margin-left: 3%;
 }
-.titsimilares {
-    justify-content: space-around;
-    color: white;
-    padding-left: 0px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-.listaparecidos {
-    list-style: none;
-    width: 28%;
+p {
+    color: white;
 }
 .imgtit {
-    width: 15%;
+    width: 100%;
     border-radius: 12px;
 }
 footer {
@@ -141,8 +80,8 @@ footer {
     margin: 5px 9px;
 }
 .logoapi {
-    margin-left: 15vw;
-    margin-top: 25px;
+    margin-top: 14px;
+    width: 15%;
     border-radius: 0%;
 }
 @media (max-width: 1060px) {
