@@ -56,6 +56,8 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 .ofertas {
     color: white;
@@ -63,7 +65,15 @@ body {
 }
 .card {
     margin: 0% 0.2%;
-    width: 15%;
+    width: 16%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 5px;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
 img {
     width: 100%;
@@ -71,9 +81,9 @@ img {
 }
 .subtitulos {
     margin-bottom: 5%;
-}
-.descripcion {
     color: white;
+    text-align: center;
+    text-decoration: none;
 }
 footer {
     margin-top: 5%;
