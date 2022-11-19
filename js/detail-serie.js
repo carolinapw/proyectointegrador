@@ -4,7 +4,7 @@ let qsObject = new URLSearchParams(queryString)
 
 let id = qsObject.get("id")
 
-let url = `https://api.themoviedb.org/3/tv/${id}?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US`
+let url = `https://api.themoviedb.org/3/tv/airing_today/${id}?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
 
 fetch(url)
 .then(function(res){
@@ -43,7 +43,7 @@ fetch(url)
 // creo que esta mal linkeado, la foto no carga, algunas series tiran undefined//
 
 //Botón "Ver recomendaciones"
-let urlRecomedaciones = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+let urlRecomedaciones = `https://api.themoviedb.org/3/tv/airing_today/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
 
 fetch(urlRecomedaciones)
     .then(function(res){

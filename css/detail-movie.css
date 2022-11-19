@@ -121,9 +121,6 @@ p {
 .cajatres {
     margin-bottom: 15px
 }
-.trailer {
-    margin-left: 30px
-}
 .button {
     font-family: Avenir,sans-serif;
     border-radius: 20px;
@@ -215,9 +212,6 @@ footer {
     margin-top: 25px;
     border-radius: 0%;
     width: 20%;
-}
-p.agregarFavs.info {
-    color: black;
 }
 @media (max-width: 1060px) {
     .titulo {
