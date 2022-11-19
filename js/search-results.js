@@ -23,7 +23,7 @@ fetch (urlMovie)
             for (let i=0; i<searchMovies.length; i++){
                 todosLosSimilares += `<div class="card">
                                             <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
-                                            <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
+                                            <h4 class="subtitulos descripcion"${searchMovies[i].original_title}></h4>
                                     </div>`
             }
        
