@@ -81,6 +81,7 @@ img {
 .descripcion {
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 footer {
     margin-top: 5%;
