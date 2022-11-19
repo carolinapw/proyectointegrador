@@ -37,6 +37,12 @@ ul {
 .formulario {
     width: 20%;
 }
+.errorBuscador {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 13px;
+}
 .search {
     border-radius: 9px;
     background-color: #000C54;

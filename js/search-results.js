@@ -39,6 +39,24 @@ let explorar = document.querySelector(".titulosimilares")
 let busqueda = buscador.value 
 explorar.innerText = "Explora títulos similares a: " + query
 
+//Buscador 
+let form = document.querySelector("form")
+let buscador1 = document.querySelector("#inputBusqueda")
+let errorBuscador = document.querySelector(".errorBuscador")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+   
+    if (buscador1.value == "") {
+        errorBuscador.innerText = "El campo buscador es obligatorio"
+    } else if (buscador1.value.length < 3) {
+        errorBuscador.innerText = "El campo buscador requiere más de 3 caracteres"
+        
+    } else {
+        this.submit()
+    }
+
+})
 
 let favoritos = []
 
