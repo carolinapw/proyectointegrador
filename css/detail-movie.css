@@ -208,6 +208,7 @@ footer {
 .logoapi {
     margin-top: 25px;
     border-radius: 0%;
+    width: 20%;
 }
 p.agregarFavs.info {
     color: black;
