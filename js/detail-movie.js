@@ -178,8 +178,7 @@ fetch(urlTrailer)
         let trailer = data.results
         let iFrame = document.querySelector(".trailer")
       
-        iFrame.innerHTML = `<h3 class="info">Trailer</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/${trailer[0].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        iFrame.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${trailer[0].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         
        
     

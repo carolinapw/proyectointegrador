@@ -89,7 +89,7 @@ fetch(urlProviders)
 
 let urlRecomendaciones = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
 
-fetch(urlRecomedaciones)
+fetch(urlRecomendaciones)
     .then(function(res){
     return res.json();
     })
@@ -103,7 +103,7 @@ fetch(urlRecomedaciones)
         for (let i = 0; i< 6; i++) {
             todasLasRecomendaciones += `<li class="peliculasSimilares">
                                             <img class="imgSimilares" src="https://image.tmdb.org/t/p/w500${infoRecomendaciones[i].poster_path}">
-                                            <h4 class="info"><a href="./detail-movie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].title}</a></h4>
+                                            <h4 class="info"><a href="./detail-movie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].name}</a></h4>
                                         </li>`
            
         }
@@ -160,7 +160,7 @@ fetch(urlRecomedaciones)
         console.log(e);
         })
 
-let urlReview = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+let urlReview = `https://api.themoviedb.org/3/tv/${id}/reviews?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
 
 fetch(urlReview)
     .then(function(res){
