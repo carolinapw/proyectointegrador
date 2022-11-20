@@ -23,7 +23,7 @@ fetch (urlMovie)
             for (let i=0; i<searchMovies.length; i++){
                 todosLosSimilares += `<div class="card">
                                             <a href="./detail-movie.html?id=${searchMovies[i].id}"><img class="imgtit" src="https://image.tmdb.org/t/p/w500${searchMovies[i].poster_path}"></a>
-                                            <h4 class="subtitulos descripcion"${searchMovies[i].title}></h4>
+                                            <h4 class="subtitulos descripcion"${searchMovies[i].original_title}></h4>
                                     </div>`
             }
        
@@ -39,6 +39,24 @@ let explorar = document.querySelector(".titulosimilares")
 let busqueda = buscador.value 
 explorar.innerText = "Explora títulos similares a: " + query
 
+//Buscador 
+let form = document.querySelector("form")
+let buscador1 = document.querySelector("#inputBusqueda")
+let errorBuscador = document.querySelector(".errorBuscador")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+   
+    if (buscador1.value == "") {
+        errorBuscador.innerText = "El campo buscador es obligatorio"
+    } else if (buscador1.value.length < 3) {
+        errorBuscador.innerText = "El campo buscador requiere más de 3 caracteres"
+        
+    } else {
+        this.submit()
+    }
+
+})
 
 let favoritos = []
 

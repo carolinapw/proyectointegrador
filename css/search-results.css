@@ -37,6 +37,12 @@ ul {
 .formulario {
     width: 20%;
 }
+.errorBuscador {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 13px;
+}
 .search {
     border-radius: 9px;
     background-color: #000C54;
@@ -49,11 +55,13 @@ ul {
 .titulosimilares {
     color: white;
     margin-left: 3%;
+    padding: 5px;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
 p {
     color: white;
@@ -61,6 +69,11 @@ p {
 .imgtit {
     width: 100%;
     border-radius: 12px;
+}
+.card {
+    width: 200px;
+    height: 315px;
+    
 }
 footer {
     margin-top: 5%;
