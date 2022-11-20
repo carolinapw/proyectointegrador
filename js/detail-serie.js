@@ -138,3 +138,54 @@ fetch(urlRecomedaciones)
     .catch(function (e){
     console.log(e);
     })
+
+    let urlTrailer = `https://api.themoviedb.org/3/tv/${id}/videos?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US`
+
+    fetch(urlTrailer)
+        .then(function(res){
+        return res.json();
+        })
+        .then(function(data){
+            console.log(data);
+    
+            let trailer = data.results
+            let iFrame = document.querySelector(".trailer")
+          
+            iFrame.innerHTML = `<h3 class="info">Trailer</h3>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/${trailer[0].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        
+        })
+    
+        .catch(function (e){
+        console.log(e);
+        })
+
+let urlReview = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+
+fetch(urlReview)
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+        
+        let reviewsUsuarios = data.results
+        let nombre = document.querySelector(".opiniones")
+        let todaslasReviews = []
+        
+        for (let i = 0; i< 4; i++) {
+            todaslasReviews += `<article class="cajacuatro">
+                                    <h2 class="usuario">Usuario:${reviewsUsuarios[i].author}</h2>
+                                    <p class="reviewUsuario">${reviewsUsuarios[i].content}</p>
+                                </article>`
+        
+                   
+        }
+        nombre.innerHTML = todaslasReviews
+                
+                
+    })
+        
+    .catch(function (e){
+        console.log(e);
+    })
