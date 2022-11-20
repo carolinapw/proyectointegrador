@@ -24,6 +24,7 @@ fetch(url)
         imagen.src += data.poster_path;
         titulo.innerText = data.name;
         puntuacion.innerText += data.vote_average;
+        informacion.innerText = data.overview;
         estreno.innerText = data.first_air_date;
         temporadas.innerText = data.number_of_seasons;
         for (let i=0; i < data.genres.length; i++){
