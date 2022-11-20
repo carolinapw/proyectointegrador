@@ -63,3 +63,78 @@ agregarFavs.addEventListener("click", function() {
     let favsToString = JSON.stringify (favoritos)
     localStorage.setItem("seriesFavs", favsToString)
 })
+
+let urlProviders = `https://api.themoviedb.org/3/tv/${id}/watch/providers?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US`
+
+fetch(urlProviders)
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        let infoProviders = data.results.US.flatrate
+        let nombresProviders = document.querySelector(".plataformas")
+        let todasLasPlataformas = []
+
+        for (let i = 0; i < infoProviders.length; i++) {
+            todasLasPlataformas += `<li class="listaPlataformas">
+                                        <img class="imgProviders" src="https://image.tmdb.org/t/p/w500${infoProviders[i].logo_path}" alt="">
+                                        <h4 class="nameProviders">${infoProviders[i].provider_name}</h4>
+                                    </li>`
+        }
+
+        nombresProviders.innerHTML = todasLasPlataformas
+    })
+
+let urlRecomendaciones = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=d7dce97c9f45ff25eeb66dc3784d0bca&language=en-US&page=1`
+
+fetch(urlRecomedaciones)
+    .then(function(res){
+    return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        let infoRecomendaciones = data.results
+        let lista = document.querySelector(".recomendaciones")
+        let todasLasRecomendaciones = ""
+
+        for (let i = 0; i< 6; i++) {
+            todasLasRecomendaciones += `<li class="peliculasSimilares">
+                                            <img class="imgSimilares" src="https://image.tmdb.org/t/p/w500${infoRecomendaciones[i].poster_path}">
+                                            <h4 class="info"><a href="./detail-movie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].title}</a></h4>
+                                        </li>`
+           
+        }
+        lista.innerHTML = todasLasRecomendaciones
+
+        
+        let verRecomendaciones = document.querySelector(".button")
+        
+        verRecomendaciones.addEventListener("click", function () {
+
+            if (verRecomendaciones.innerText == "Ver recomendaciones") {
+                lista.style.display = "flex";
+                this.innerText = "Ocultar recomendaciones";
+            } else {
+                lista.style.display = "none"
+                this.innerText = "Ver recomendaciones"
+            }
+
+        })
+        
+        verRecomendaciones.addEventListener("mouseover", function () {
+            verRecomendaciones.style.backgroundColor = "#6C94FF"
+            verRecomendaciones.style.borderColor = "#6C94FF"
+        })
+
+        verRecomendaciones.addEventListener("mouseout", function () {
+            verRecomendaciones.style.backgroundColor = "#000C54"
+            verRecomendaciones.style.borderColor = "white"
+        })
+    })
+
+    .catch(function (e){
+    console.log(e);
+    })

@@ -129,6 +129,28 @@ article.descripcionserie {
     width: 100%;
     border-radius: 13px;
 }
+.plataformas {
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.listaPlataformas {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.imgProviders {
+    width: 73px;
+    height: 73px;
+}
+.nameProviders {
+    margin-left: 15px;
+    color: white;
+    margin-top: 20px;
+}
 footer {
     margin-top: 5%;
 }
