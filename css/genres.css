@@ -56,12 +56,12 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .ofertas {
     color: white;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 .card {
     margin: 0% 0.2%;

@@ -55,6 +55,7 @@ nav.navegacion {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
+    margin-top: 3%;
 }
 .cont2 {
     display: flex;
@@ -87,6 +88,7 @@ nav.navegacion {
     margin-bottom: 5%;
     font-size: 90px;
     text-align: center;
+    color: white;
 }
 h1 {
     font-size: 60px;
@@ -113,17 +115,24 @@ article.descripcionserie {
     text-decoration: none;
     color: white;
 }
-
-.button {
+button {
+        font-family: Avenir,sans-serif;
+        border-radius: 20px;
+        padding: 6px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        background-color: #000C54;
+        color: white;
+}
+.pagFavoritos {
     font-family: Avenir,sans-serif;
-    border-radius: 20px;
     padding: 6px;
     border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    background-color: #000C54;
-    color: white;
-   
+        border-style: solid;
+        border-color: white;
+        background-color: #000C54;
+        color: white;
 }
 .recomendaciones {
     display: flex;
@@ -163,6 +172,10 @@ article.descripcionserie {
     color: white;
     margin-top: 20px;
 }
+h3 {
+    color: white;
+    margin-top: 30px;
+}
 .recomendaciones {
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +183,25 @@ article.descripcionserie {
     padding-left: 0;
     justify-content: space-between;
     width: 100%;
+}
+.trailer {
+    padding-left: 3%;
+    padding-right: 3%;
+} 
+.reviews {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.opiniones {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.usuario {
+    color: white;
+    font-size: 18px;
+}
+.reviewUsuario {
+    font-size: 13px;
 }
 .peliculasSimilares {
     list-style: none;

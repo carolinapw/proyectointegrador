@@ -72,6 +72,7 @@ ul {
 }
 img {
     width: 100%;
+    border-radius: 13px;
 }
 .fav2 {
     width: 100%;

@@ -51,13 +51,15 @@ ul {
     margin-left: 10px;
 }
 .ofertas {
-    margin-left: 10px;
+    margin-left: 25px;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .card {
     margin: 0% 0.2%;

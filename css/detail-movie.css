@@ -222,6 +222,10 @@ p {
     color: white;
     margin-top: 20px;
 }
+.tituloTrailer {
+    padding-left: 3%;
+    padding-right: 3%;
+}
 footer {
     margin-top: 5%;
 }
