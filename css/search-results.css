@@ -61,7 +61,9 @@ ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 p {
     color: white;
@@ -71,9 +73,7 @@ p {
     border-radius: 12px;
 }
 .card {
-    width: 200px;
-    height: 315px;
-    
+    width: 15%;
 }
 footer {
     margin-top: 5%;
