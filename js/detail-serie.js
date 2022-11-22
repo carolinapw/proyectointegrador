@@ -104,7 +104,7 @@ fetch(urlRecomendaciones)
         for (let i = 0; i< 6; i++) {
             todasLasRecomendaciones += `<li class="peliculasSimilares">
                                             <img class="imgSimilares" src="https://image.tmdb.org/t/p/w500${infoRecomendaciones[i].poster_path}">
-                                            <h4 class="info"><a href="./detail-movie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].name}</a></h4>
+                                            <h4 class="info"><a href="./detail-serie.html?id=${infoRecomendaciones[i].id}">${infoRecomendaciones[i].name}</a></h4>
                                         </li>`
            
         }
