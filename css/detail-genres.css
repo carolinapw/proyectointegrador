@@ -97,6 +97,10 @@ footer {
     width: 15%;
     border-radius: 0%;
 }
+.link {
+    text-decoration: none;
+    color:white;
+}
 @media (max-width: 1040px) {
     .navegacion {
         width: 60%;

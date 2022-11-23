@@ -27,9 +27,9 @@ fetch (urlGenerosPeliculas)
         for (let i=0; i<generosPeliculas.length; i++) {
             console.log(generosPeliculas[i]);
             todasLasPeliculas += `<article class="card">
-                                    <a href= "detail-movie.html?id=${generosPeliculas[i].id}">                              
+                                    <a class="link" href= "detail-movie.html?id=${generosPeliculas[i].id}">                              
                                     <img src="https://image.tmdb.org/t/p/w500${generosPeliculas[i].poster_path}">
-                                    <h4 class="subtitulos" ${generosPeliculas[i].title}><a href= "./detail-movie.html?id=${generosPeliculas[i].id}"></a></h4>
+                                    <h4 class="subtitulos">${generosPeliculas[i].title}<a class="link" href= "./detail-movie.html?id=${generosPeliculas[i].id}"></a></h4>
                                     </a>
                                 </article>`
         }
